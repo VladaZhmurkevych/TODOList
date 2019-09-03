@@ -1,0 +1,5 @@
+<div class="field">
+<h1 class="caption">Todo App</h1>
+  <app-input-to-do></app-input-to-do>
+  <app-to-do-element *ngFor="let element of todoList" [element]="element"></app-to-do-element>
+</div>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+
+.element {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.left-line {
+  width: 0;
+  height: 100%;
+  border: 2px solid #f7ab31;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 10px);
+  height: 100%;
+  background-color: white;
+  padding: 15px;
+}
+
+.todoelement {
+  display: flex;
+}
+
+.check {
+  margin-right: 10px;
+}
+
+.check:checked ~ .todoText {
+  text-decoration: line-through;
+  color: #5e5e5e;
+}
+
+.todoText {
+  color: black;
+  font-size: 20px;
+  font-family: 'Manjari', sans-serif;
+  vertical-align: center;
+}
+
+.delete {
+  display: block;
+  height: 90%;
+  cursor: pointer;
+}
