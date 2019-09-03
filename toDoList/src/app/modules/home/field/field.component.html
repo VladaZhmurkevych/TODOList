@@ -1,5 +1,9 @@
 <div class="field">
 <h1 class="caption">Todo App</h1>
   <app-input-to-do></app-input-to-do>
-  <app-to-do-element *ngFor="let element of todoList" [element]="element"></app-to-do-element>
+  <app-to-do-element *ngFor="let element of todoList.slice(page*5, page*5 + 5)" [element]="element"></app-to-do-element>
+  <div class="pagination" *ngIf="todoList.length > 4">
+    <div class="button round" (click)="prevPage()">&#8249;</div>
+    <div class="button round" (click)="nextPage()">&#8250;</div>
+  </div>
 </div>

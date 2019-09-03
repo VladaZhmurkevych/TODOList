@@ -1,6 +1,6 @@
 <div class="container">
   <input type="text" placeholder="Add todo" class="input" #text>
-  <div class="add" (click)="addElement(text.value)">
+  <div class="add" (click)="addElement(text.value); text.value = ''">
     <img src="/assets/images/add.svg" class="plus">
   </div>
 </div>

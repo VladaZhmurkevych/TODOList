@@ -2,7 +2,7 @@
 
 .field {
   width: 450px;
-  min-height: 500px;
+  min-height: 636px;
   margin-right: auto;
   margin-left: auto;
   padding: 40px;
@@ -15,4 +15,29 @@
   color: #f7ab31;
   text-align: center;
   font-family: 'Manjari', sans-serif;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 10px auto;
+
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+.round {
+  border-radius: 50%;
 }
